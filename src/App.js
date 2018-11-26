@@ -50,7 +50,9 @@ class App extends Component {
               var obj = res.body
 
               // get thumbnail
-              obj.thumb = obj.files.filter((file) => file.format=="Item Tile")[0]
+
+              var thumbs = obj.files.filter((file) => file.format=="Item Tile"||file.format=="Thumbnail")
+              obj.thumb = thumbs[thumbs.length-1]
               obj.ogg = obj.files.filter((file) => file.format=="Ogg Video")[0]
               obj.mp4 = obj.files.filter((file) => file.format=="MPEG4")[0]
 

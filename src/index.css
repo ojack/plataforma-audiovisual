@@ -784,7 +784,7 @@ table {
 }
 
 .bg-pink-dark {
-  background-color: #eb5286;
+  background-color: #ff0071;
 }
 
 .bg-pink {
@@ -1076,7 +1076,7 @@ table {
 }
 
 .hover\:bg-pink-dark:hover {
-  background-color: #eb5286;
+  background-color: #ff0071;
 }
 
 .hover\:bg-pink:hover {
@@ -1368,7 +1368,7 @@ table {
 }
 
 .focus\:bg-pink-dark:focus {
-  background-color: #eb5286;
+  background-color: #ff0071;
 }
 
 .focus\:bg-pink:focus {
@@ -1732,7 +1732,7 @@ table {
 }
 
 .border-pink-dark {
-  border-color: #eb5286;
+  border-color: #ff0071;
 }
 
 .border-pink {
@@ -2024,7 +2024,7 @@ table {
 }
 
 .hover\:border-pink-dark:hover {
-  border-color: #eb5286;
+  border-color: #ff0071;
 }
 
 .hover\:border-pink:hover {
@@ -2316,7 +2316,7 @@ table {
 }
 
 .focus\:border-pink-dark:focus {
-  border-color: #eb5286;
+  border-color: #ff0071;
 }
 
 .focus\:border-pink:focus {
@@ -5096,7 +5096,7 @@ table {
 }
 
 .text-pink-dark {
-  color: #eb5286;
+  color: #ff0071;
 }
 
 .text-pink {
@@ -5388,7 +5388,7 @@ table {
 }
 
 .hover\:text-pink-dark:hover {
-  color: #eb5286;
+  color: #ff0071;
 }
 
 .hover\:text-pink:hover {
@@ -5680,7 +5680,7 @@ table {
 }
 
 .focus\:text-pink-dark:focus {
-  color: #eb5286;
+  color: #ff0071;
 }
 
 .focus\:text-pink:focus {
@@ -6408,7 +6408,7 @@ table {
   }
 
   .sm\:bg-pink-dark {
-    background-color: #eb5286;
+    background-color: #ff0071;
   }
 
   .sm\:bg-pink {
@@ -6700,7 +6700,7 @@ table {
   }
 
   .sm\:hover\:bg-pink-dark:hover {
-    background-color: #eb5286;
+    background-color: #ff0071;
   }
 
   .sm\:hover\:bg-pink:hover {
@@ -6992,7 +6992,7 @@ table {
   }
 
   .sm\:focus\:bg-pink-dark:focus {
-    background-color: #eb5286;
+    background-color: #ff0071;
   }
 
   .sm\:focus\:bg-pink:focus {
@@ -7348,7 +7348,7 @@ table {
   }
 
   .sm\:border-pink-dark {
-    border-color: #eb5286;
+    border-color: #ff0071;
   }
 
   .sm\:border-pink {
@@ -7640,7 +7640,7 @@ table {
   }
 
   .sm\:hover\:border-pink-dark:hover {
-    border-color: #eb5286;
+    border-color: #ff0071;
   }
 
   .sm\:hover\:border-pink:hover {
@@ -7932,7 +7932,7 @@ table {
   }
 
   .sm\:focus\:border-pink-dark:focus {
-    border-color: #eb5286;
+    border-color: #ff0071;
   }
 
   .sm\:focus\:border-pink:focus {
@@ -10696,7 +10696,7 @@ table {
   }
 
   .sm\:text-pink-dark {
-    color: #eb5286;
+    color: #ff0071;
   }
 
   .sm\:text-pink {
@@ -10988,7 +10988,7 @@ table {
   }
 
   .sm\:hover\:text-pink-dark:hover {
-    color: #eb5286;
+    color: #ff0071;
   }
 
   .sm\:hover\:text-pink:hover {
@@ -11280,7 +11280,7 @@ table {
   }
 
   .sm\:focus\:text-pink-dark:focus {
-    color: #eb5286;
+    color: #ff0071;
   }
 
   .sm\:focus\:text-pink:focus {
@@ -12007,7 +12007,7 @@ table {
   }
 
   .md\:bg-pink-dark {
-    background-color: #eb5286;
+    background-color: #ff0071;
   }
 
   .md\:bg-pink {
@@ -12299,7 +12299,7 @@ table {
   }
 
   .md\:hover\:bg-pink-dark:hover {
-    background-color: #eb5286;
+    background-color: #ff0071;
   }
 
   .md\:hover\:bg-pink:hover {
@@ -12591,7 +12591,7 @@ table {
   }
 
   .md\:focus\:bg-pink-dark:focus {
-    background-color: #eb5286;
+    background-color: #ff0071;
   }
 
   .md\:focus\:bg-pink:focus {
@@ -12947,7 +12947,7 @@ table {
   }
 
   .md\:border-pink-dark {
-    border-color: #eb5286;
+    border-color: #ff0071;
   }
 
   .md\:border-pink {
@@ -13239,7 +13239,7 @@ table {
   }
 
   .md\:hover\:border-pink-dark:hover {
-    border-color: #eb5286;
+    border-color: #ff0071;
   }
 
   .md\:hover\:border-pink:hover {
@@ -13531,7 +13531,7 @@ table {
   }
 
   .md\:focus\:border-pink-dark:focus {
-    border-color: #eb5286;
+    border-color: #ff0071;
   }
 
   .md\:focus\:border-pink:focus {
@@ -16295,7 +16295,7 @@ table {
   }
 
   .md\:text-pink-dark {
-    color: #eb5286;
+    color: #ff0071;
   }
 
   .md\:text-pink {
@@ -16587,7 +16587,7 @@ table {
   }
 
   .md\:hover\:text-pink-dark:hover {
-    color: #eb5286;
+    color: #ff0071;
   }
 
   .md\:hover\:text-pink:hover {
@@ -16879,7 +16879,7 @@ table {
   }
 
   .md\:focus\:text-pink-dark:focus {
-    color: #eb5286;
+    color: #ff0071;
   }
 
   .md\:focus\:text-pink:focus {
@@ -17606,7 +17606,7 @@ table {
   }
 
   .lg\:bg-pink-dark {
-    background-color: #eb5286;
+    background-color: #ff0071;
   }
 
   .lg\:bg-pink {
@@ -17898,7 +17898,7 @@ table {
   }
 
   .lg\:hover\:bg-pink-dark:hover {
-    background-color: #eb5286;
+    background-color: #ff0071;
   }
 
   .lg\:hover\:bg-pink:hover {
@@ -18190,7 +18190,7 @@ table {
   }
 
   .lg\:focus\:bg-pink-dark:focus {
-    background-color: #eb5286;
+    background-color: #ff0071;
   }
 
   .lg\:focus\:bg-pink:focus {
@@ -18546,7 +18546,7 @@ table {
   }
 
   .lg\:border-pink-dark {
-    border-color: #eb5286;
+    border-color: #ff0071;
   }
 
   .lg\:border-pink {
@@ -18838,7 +18838,7 @@ table {
   }
 
   .lg\:hover\:border-pink-dark:hover {
-    border-color: #eb5286;
+    border-color: #ff0071;
   }
 
   .lg\:hover\:border-pink:hover {
@@ -19130,7 +19130,7 @@ table {
   }
 
   .lg\:focus\:border-pink-dark:focus {
-    border-color: #eb5286;
+    border-color: #ff0071;
   }
 
   .lg\:focus\:border-pink:focus {
@@ -21894,7 +21894,7 @@ table {
   }
 
   .lg\:text-pink-dark {
-    color: #eb5286;
+    color: #ff0071;
   }
 
   .lg\:text-pink {
@@ -22186,7 +22186,7 @@ table {
   }
 
   .lg\:hover\:text-pink-dark:hover {
-    color: #eb5286;
+    color: #ff0071;
   }
 
   .lg\:hover\:text-pink:hover {
@@ -22478,7 +22478,7 @@ table {
   }
 
   .lg\:focus\:text-pink-dark:focus {
-    color: #eb5286;
+    color: #ff0071;
   }
 
   .lg\:focus\:text-pink:focus {
@@ -23205,7 +23205,7 @@ table {
   }
 
   .xl\:bg-pink-dark {
-    background-color: #eb5286;
+    background-color: #ff0071;
   }
 
   .xl\:bg-pink {
@@ -23497,7 +23497,7 @@ table {
   }
 
   .xl\:hover\:bg-pink-dark:hover {
-    background-color: #eb5286;
+    background-color: #ff0071;
   }
 
   .xl\:hover\:bg-pink:hover {
@@ -23789,7 +23789,7 @@ table {
   }
 
   .xl\:focus\:bg-pink-dark:focus {
-    background-color: #eb5286;
+    background-color: #ff0071;
   }
 
   .xl\:focus\:bg-pink:focus {
@@ -24145,7 +24145,7 @@ table {
   }
 
   .xl\:border-pink-dark {
-    border-color: #eb5286;
+    border-color: #ff0071;
   }
 
   .xl\:border-pink {
@@ -24437,7 +24437,7 @@ table {
   }
 
   .xl\:hover\:border-pink-dark:hover {
-    border-color: #eb5286;
+    border-color: #ff0071;
   }
 
   .xl\:hover\:border-pink:hover {
@@ -24729,7 +24729,7 @@ table {
   }
 
   .xl\:focus\:border-pink-dark:focus {
-    border-color: #eb5286;
+    border-color: #ff0071;
   }
 
   .xl\:focus\:border-pink:focus {
@@ -27493,7 +27493,7 @@ table {
   }
 
   .xl\:text-pink-dark {
-    color: #eb5286;
+    color: #ff0071;
   }
 
   .xl\:text-pink {
@@ -27785,7 +27785,7 @@ table {
   }
 
   .xl\:hover\:text-pink-dark:hover {
-    color: #eb5286;
+    color: #ff0071;
   }
 
   .xl\:hover\:text-pink:hover {
@@ -28077,7 +28077,7 @@ table {
   }
 
   .xl\:focus\:text-pink-dark:focus {
-    color: #eb5286;
+    color: #ff0071;
   }
 
   .xl\:focus\:text-pink:focus {

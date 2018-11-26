@@ -9,8 +9,9 @@ class Gallery extends Component {
   render() {
     var self = this
     return (
-      <div className="">
-        {this.props.entries.map((entry, index) => <Thumbnail {...self.props} entry={entry} key={index} />)}
+      <div className="mt-20">
+        {this.props.entries.map((entry, index) =>
+          <Thumbnail {...self.props} entry={entry} highlighted={entry.uniq === this.props.hoverEntryUniq ? true : false} key={index} index={index}/>)}
       </div>
     );
   }

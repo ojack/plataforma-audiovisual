@@ -122,7 +122,7 @@ let colors = {
 
   'pink-darkest': '#451225',
   'pink-darker': '#6f213f',
-  'pink-dark': '#eb5286',
+  'pink-dark': '#FF0071', // edited
   'pink': '#f66d9b',
   'pink-light': '#fa7ea8',
   'pink-lighter': '#ffbbca',
