@@ -54,7 +54,7 @@ class App extends Component {
               var thumbs = obj.files.filter((file) => file.format=="Item Tile"||file.format=="Thumbnail")
               obj.thumb = thumbs[thumbs.length-1]
               obj.ogg = obj.files.filter((file) => file.format=="Ogg Video")[0]
-              obj.mp4 = obj.files.filter((file) => file.format=="MPEG4")[0]
+              obj.mp4 = obj.files.filter((file) => file.format=="MPEG4" || file.format == "h.264")[0]
 
               // add tags to tags list
               obj.metadata.subject.forEach((tag)=>{
@@ -85,7 +85,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="flex">
         <PlataformaAudiovisual tags={this.state.tags} entries={this.state.entries}/>
       </div>
     );

@@ -8,10 +8,16 @@ class Gallery extends Component {
 
   render() {
     var self = this
+
     return (
-      <div className="mt-20">
-        {this.props.entries.map((entry, index) =>
-          <Thumbnail {...self.props} entry={entry} highlighted={entry.uniq === this.props.hoverEntryUniq ? true : false} key={index} index={index}/>)}
+      <div className="flex flex-wrap">
+        {this.props.entries.map((entry, index) => {
+          var highlighted = false
+          if(entry.uniq === this.props.hoverEntryUniq) highlighted = true
+          if(this.props.hoverTag !== null && entry.metadata.subject.indexOf(this.props.hoverTag.label) >= 0) highlighted = true
+          return (<Thumbnail {...self.props} entry={entry} highlighted={highlighted} key={index} index={index}/>)
+        })
+        }
       </div>
     );
   }
