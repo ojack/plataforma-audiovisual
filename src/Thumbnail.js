@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import transparent from './assets/1px-01.png'
 
 class Thumbnail extends Component {
   constructor() {
@@ -23,16 +23,18 @@ class Thumbnail extends Component {
     //     {innerContent}
     //   </div>
     // );
+
+    //style={{ background: 'url(' + thumb + ')', backgroundSize: 'cover'}}
     var vidUrl = 'http://' + this.props.entry.d1 + this.props.entry.dir + '/' + this.props.entry.ogg.name
     return <div
         className="w-1/3 cursor-pointer"
         onMouseOver={()=>{this.props.onThumbHover(this.props.index)}}
         onMouseOut={()=>{this.props.onThumbHover(null)}}
         onMouseDown={()=>{this.props.onSelectEntry(this.props.index)}}
-        style={{ background: 'url(' + thumb + ')'}}
+        style={{ background: 'url(' + thumb + ')', backgroundSize: 'cover'}}
         >
           <div className="relative">
-            <video className="w-full" autoplay="true">
+            <video className="w-full" autoplay="true" muted="true" loop="true" poster={transparent}>
               <source src={vidUrl} type="video/ogg" />
               </video>
               {innerContent}
