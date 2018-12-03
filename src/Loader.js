@@ -10,14 +10,14 @@ class Loader extends Component {
     var self = this
 
     return (
-      <div class="loader-container">
-        <div class="loader">
-          <div class="loader__bar"></div>
-          <div class="loader__bar"></div>
-          <div class="loader__bar"></div>
-          <div class="loader__bar"></div>
-          <div class="loader__bar"></div>
-          <div class="loader__ball"></div>
+      <div className="loader-container">
+        <div className="loader">
+          <div className="loader__bar"></div>
+          <div className="loader__bar"></div>
+          <div className="loader__bar"></div>
+          <div className="loader__bar"></div>
+          <div className="loader__bar"></div>
+          <div className="loader__ball"></div>
         </div>
       </div>
     );

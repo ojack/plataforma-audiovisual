@@ -1,0 +1,7 @@
+{
+  "color": "#FF0071",
+  "query-gaitan": "%28Gaitan%29%20AND%20mediatype%3A%28movies%29",
+  "query": "creator%3A%28Plataforma%20Bogota%29%20AND%20mediatype%3A%28movies%29",
+  "showTags": true,
+  "videoThumbnails": true
+}

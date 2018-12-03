@@ -7,7 +7,7 @@ class TagList extends Component {
   }
 
   render() {
-    console.log('thumb', this.props)
+  //  console.log('thumb', this.props)
     //var thumb = 'http://' + this.props.entry.d1 + this.props.entry.dir + '/' + this.props.entry.thumb.name
     return (
       <div className="w-full m-4">
@@ -19,6 +19,7 @@ class TagList extends Component {
             className={"inline-block m-1 p-2 text-white cursor-pointer " + color}
             onMouseOver={()=>this.props.onTagHover(index)}
             onMouseOut={()=>this.props.onTagHover(null)}
+            key={index}
             >
               {tag.label}</div>
         })}

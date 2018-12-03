@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import transparent from './assets/1px-01.png'
+import config from './config.json'
 
 class Thumbnail extends Component {
   constructor() {
@@ -7,10 +8,10 @@ class Thumbnail extends Component {
   }
 
   render() {
-    console.log('thumb', this.props)
+  //  console.log('thumb', this.props)
     var thumb = 'http://' + this.props.entry.d1 + this.props.entry.dir + '/' + this.props.entry.thumb.name
     var innerContent = <div></div>
-    if(this.props.highlighted === true) innerContent = <div className="bg-pink-dark p-2 h-full text-2xl uppercase absolute pin-t pin-l"> {this.props.entry.metadata.title} </div>
+    if(this.props.highlighted === true) innerContent = <div className="p-2 h-full text-2xl uppercase absolute pin-t pin-l" style={{backgroundColor: config.color}}> {this.props.entry.metadata.title} </div>
     // return (
     //   <div
     //     className="m-4 cursor-pointer"
@@ -27,14 +28,14 @@ class Thumbnail extends Component {
     //style={{ background: 'url(' + thumb + ')', backgroundSize: 'cover'}}
     var vidUrl = 'http://' + this.props.entry.d1 + this.props.entry.dir + '/' + this.props.entry.ogg.name
     return <div
-        className="w-1/3 cursor-pointer"
+        className="w-full cursor-pointer"
         onMouseOver={()=>{this.props.onThumbHover(this.props.index)}}
         onMouseOut={()=>{this.props.onThumbHover(null)}}
         onMouseDown={()=>{this.props.onSelectEntry(this.props.index)}}
         style={{ background: 'url(' + thumb + ')', backgroundSize: 'cover'}}
         >
           <div className="relative">
-            <video className="w-full" autoplay="true" muted="true" loop="true" poster={transparent}>
+            <video className="w-full" autoPlay={true} muted={true} loop={true} poster={transparent}>
               <source src={vidUrl} type="video/ogg" />
               </video>
               {innerContent}

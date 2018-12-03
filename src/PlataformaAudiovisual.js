@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
-import Gallery from './Gallery.js'
-import TagList from './TagList.js'
+import TaggedGallery from './TaggedGallery.js'
 import EntryDetail from './EntryDetail.js'
+import { Route, Switch} from "react-router-dom";
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      hoverTag: null,
-      hoverEntry: null,
       selectedEntry: null
     }
-    this.onThumbHover = this.onThumbHover.bind(this)
-    this.onTagHover = this.onTagHover.bind(this)
     this.onSelectEntry = this.onSelectEntry.bind(this)
   }
 
@@ -24,42 +20,36 @@ class App extends Component {
     }
   }
 
-  onTagHover(el) {
-  //  console.log("tag hover", el)
-    if(el !== null) {
-      this.setState({ hoverTag: this.props.tags[el]})
-    } else {
-      this.setState({ hoverTag: null})
-    }
-  }
-
-  onThumbHover(el) {
-    if(el !== null) {
-      this.setState({ hoverEntry: this.props.entries[el]})
-    } else {
-      this.setState({ hoverEntry: null})
-    }
-
-  }
   render() {
-    var mainGallery = null
-    if(this.state.selectedEntry !== null) {
-      mainGallery = <EntryDetail entry={this.state.selectedEntry} />
-    } else {
-      mainGallery = <div>
-        <TagList tags={this.props.tags}  hoverEntry={this.state.hoverEntry} onTagHover={this.onTagHover} hoverTag={this.state.hoverTag}/>
-        <Gallery
-          entries={this.props.entries}
-          onSelectEntry={this.onSelectEntry}
-          hoverTag={this.state.hoverTag}
-          onThumbHover={this.onThumbHover}
-          hoverEntryUniq={this.state.hoverEntry === null ? null : this.state.hoverEntry.uniq}
-        />
-      </div>
-    }
+    // var mainGallery = null
+    // if(this.state.selectedEntry !== null) {
+    //   mainGallery = <EntryDetail entry={this.state.selectedEntry} tags={this.props.tags} onSelectEntry={this.onSelectEntry}/>
+    // } else {
+    //   mainGallery = <TaggedGallery
+    //     tags={this.props.tags}
+    //     entries={this.props.entries}
+    //     onSelectEntry={this.onSelectEntry}
+    //   />
+    // }
+    // <Switch>
+    //   <Route exact path="/">
+    //     <PlataformaAudiovisual tags={this.state.tags} entries={this.state.entries}/>
+    //   </Route>
+    // </Switch>
     return (
       <div className="">
-        {mainGallery}
+      <Switch>
+        <Route exact path="/">
+              <TaggedGallery
+                tags={this.props.tags}
+                entries={this.props.entries}
+                onSelectEntry={this.onSelectEntry}
+              />
+        </Route>
+        <Route path="/item/:identifier">
+              <EntryDetail entry={this.state.selectedEntry} tags={this.props.tags} entries={this.props.entries} onSelectEntry={this.onSelectEntry}/>
+        </Route>
+      </Switch>
       </div>
     );
   }

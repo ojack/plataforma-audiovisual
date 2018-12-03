@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import request from 'superagent'
+import { HashRouter as Router} from "react-router-dom";
 import PlataformaAudiovisual from './PlataformaAudiovisual.js'
 import Loader from './Loader.js'
-
+import config from './config.json'
 import './App.css';
 
 var baseUrl = 'https://api.archivelab.org/search?q='
@@ -14,7 +15,10 @@ var metadataBaseUrl = 'https://archive.org/metadata/'
 // then be used with the metadata api.
 // formulate queries using: https://archive.org/advancedsearch.php
 //var query = 'creator%3A%28Plataforma%20Bogota%29%20AND%20mediatype%3A%28movies%29'
-var query = '%28Gaitan%29%20AND%20mediatype%3A%28movies%29'
+
+var query = config.query
+
+//var query = '%28Gaitan%29%20AND%20mediatype%3A%28movies%29'
 // var query = '%28bogota%29%20AND%20mediatype%3A%28movies%29'
 
 
@@ -87,10 +91,12 @@ class App extends Component {
               if(obj.ogg !== undefined && obj.mp4 !== undefined) records[res.body.metadata.identifier] = obj
               return res.body.metadata.identifier
             })
-            console.log(records, ids, tags)
+            var tagArray = Object.values(tags)
+            tagArray.sort((a, b) => a.entries.length - b.entries.length)
+            console.log("TAGS", records, ids, tagArray)
             self.setState({
               entries: Object.values(records),
-              tags: Object.values(tags),
+              tags: tagArray,
               isLoaded: true
             })
           })
@@ -110,10 +116,17 @@ class App extends Component {
     } else {
       content = <Loader />
     }
+    //  {content}
+    // <Route render={({ location }) => (
+    //     <Route exact path="/"> <PlataformaAudiovisual tags={this.state.tags} entries={this.state.entries}/> </Route>
+    // )} />
+
     return (
-      <div className="flex">
-        {content}
-      </div>
+      <Router basename={process.env.PUBLIC_URL}>
+          <div className="flex font-sans">
+            {content}
+          </div>
+      </Router>
     );
   }
 }
