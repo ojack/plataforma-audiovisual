@@ -11,7 +11,7 @@ class Thumbnail extends Component {
   //  console.log('thumb', this.props)
     var thumb = 'http://' + this.props.entry.d1 + this.props.entry.dir + '/' + this.props.entry.thumb.name
     var innerContent = <div></div>
-    if(this.props.highlighted === true) innerContent = <div className="p-2 h-full text-2xl uppercase absolute pin-t pin-l" style={{backgroundColor: config.color}}> {this.props.entry.metadata.title} </div>
+    if(this.props.highlighted === true) innerContent = <div className="p-2 h-full text-3xl text-white uppercase absolute pin-t pin-l" style={{backgroundColor: config.color}}> {this.props.entry.metadata.title} </div>
     // return (
     //   <div
     //     className="m-4 cursor-pointer"

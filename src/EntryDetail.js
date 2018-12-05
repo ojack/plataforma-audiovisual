@@ -29,7 +29,7 @@ class EntryDetail extends Component {
     this.props.tags.forEach((tag) => {
       tag.entries.forEach((entry) => {
         if(entry.uniq !== entryObj.uniq) {
-          var index = entryArray.indexOf(entry.uniq < 0)
+          var index = entryArray.indexOf(entry.uniq)
           console.log(entry.uniq, entryArray, index)
           if(index < 0) {
             entryArray.push(entry.uniq)
@@ -51,7 +51,7 @@ class EntryDetail extends Component {
         <h1 className="m-6"> {entryObj.metadata.title} </h1>
         <div className="m-6"> {entryObj.metadata.date} </div>
         <p className="m-6" dangerouslySetInnerHTML={{__html: entryObj.metadata.description}}></p>
-        <h3 className="m-6"> Relacionados: </h3>
+        <h3 className="mt-12 m-6"> Relacionados: </h3>
         <TaggedGallery entries={entries} tags={this.props.tags} onSelectEntry={this.props.onSelectEntry}/>
       </div>
     )
